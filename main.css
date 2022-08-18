@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: "Roboto", sans-serif;
+
+    margin: 0%;
+}
+header {
+    margin-bottom: 80px;
+    box-shadow: 6px 1px 11px -3px rgba(0, 0, 0, 0.75);
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+
+    max-width: 991px;
+    margin: auto;
+}
+nav a {
+    color: rgb(6, 14, 20);
+    text-decoration: none;
+
+    align-self: center;
+}
+.navigation {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.navigation a {
+    display: block;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+.navigation a:hover {
+    background-color: rgb(240, 24, 175);
+}
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+    .navigation {
+        flex-direction: column;
+    }
+    .navigation {
+        text-align: center;
+        padding: 10px;
+        border-top: 1px solid rgb(207, 72, 151);
+        border-bottom: 1px solid palevioletred;
+    }
+}
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.form-label {
+    color: palevioletred;
+}
+.form-input {
+    width: 100%;
+    margin: 12px 0;
+}
+.btn {
+    background: linear-gradient(to left, rgb(74, 27, 81), rgb(46, 8, 52));
+    color: rgb(235, 235, 239);
+    padding: 10px 50px;
+    text-decoration: none;
+    font-size: 14px;
+    border: 2px solid white;
+    border-radius: 6px;
+    display: inline-block;
+    margin-top: 10px;
+    text-align: center;
+    align-self: flex-end;
+    min-width: 120px;
+    cursor: pointer;
+}
+.btn:hover {
+    background: rgb(74, 27, 81);
+}
+
+.main-nav__item--login a {
+    color: rgb(246, 251, 251);
+    background-color: #380c40;
+
+    border-radius: 5px;
+}
+
+#features {
+    margin: auto;
+    max-width: 991px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: -5px 4px 25px -9px rgba(0, 0, 0, 0.61);
+}
+
+.features__left {
+    background-color: #fdf6f9;
+    padding: 25px 25px 0 25px;
+    flex: 1 1 60%;
+    width: 60%;
+}
+.features__right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 30px;
+    width: 40%;
+    justify-content: center;
+}
+.features-img {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(228, 235, 238);
+    border-radius: 4px;
+}
+.logo {
+    float: left;
+    width: 100px;
+    height: 50px;
+    margin: 0px 0px;
+}
